@@ -30,13 +30,13 @@ namespace PRSLibrary.Models {
         protected override void OnModelCreating(ModelBuilder builder) {
             builder.Entity<User>(e => {
                 e.HasIndex(p => p.Username).IsUnique(true);
-            }); //added to make Username unique
+            }); // makes Username in User unique
             builder.Entity<Vendor>(e => {
                 e.HasIndex(p => p.Code).IsUnique(true);
-            }); //added to make Code unique
+            }); // makes Code in Vendor unique
             builder.Entity<Product>(e => {
                 e.HasIndex(p => p.PartNbr).IsUnique(true);
-            }); //added to make PartNbr unique
+            }); // makes PartNbr in Product unique
         }
     }
 }

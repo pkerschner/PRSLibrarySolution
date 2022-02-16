@@ -27,6 +27,6 @@ namespace PRSLibrary.Models {
         [StringLength(255)]
         public string Email { get; set; }
 
-        public Vendor() { }
+        public Vendor() { } // default constructor
     }
 }

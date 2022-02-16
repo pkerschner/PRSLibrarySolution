@@ -25,6 +25,6 @@ namespace PRSLibrary.Models {
         public bool IsReviewer { get; set; }
         public bool IsAdmin { get; set; }
 
-        public User() { }
+        public User() { } // default constructor
     }
 }

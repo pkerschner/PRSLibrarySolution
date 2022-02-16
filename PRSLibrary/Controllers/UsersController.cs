@@ -14,6 +14,12 @@ namespace PRSLibrary.Controllers {
         public UsersController(PrsDbContext context) {
             this._context = context;
         }
+        // login method
+        public User Login(string username, string password) {
+            return _context.Users
+                        .SingleOrDefault(x => x.Username == username
+                                            && x.Password == password);
+        }
 
         public IEnumerable<User> GetAll() {
             return _context.Users.ToList();
