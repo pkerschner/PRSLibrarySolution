@@ -98,7 +98,7 @@ namespace TestPrsLibrary {
 
             //// Requests
 
-            //// this statement is required for all methods in the ProductsController
+            //// this statement is required for all methods in the RequestsController
             //var reqCtrl = new RequestsController(context);
 
             //// displays requests not owned by UserId 3 with Status of REVIEW
